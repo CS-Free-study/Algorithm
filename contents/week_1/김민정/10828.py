@@ -1,3 +1,5 @@
+#10828 스택 
+#스택의 동작을 구현 - 리스트 사용
 import sys
 
 N = int(sys.stdin.readline())
