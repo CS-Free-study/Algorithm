@@ -56,7 +56,9 @@ int main(int argc, char * argv[])
 	return 0;
 }
 
+// =============================================
 
+// Stack 라이브러리 사용
 
 // #include<iostream>
 // #include<stack>
@@ -111,4 +113,54 @@ int main(int argc, char * argv[])
 // 		}
 // 	}
 //     return 0;
+// }
+
+// ==============================================
+
+// c 스타일로 구현
+
+// #include<stdio.h>
+
+// #define MAX_STACK_SIZE 100
+
+// typedef struct{
+// 	int data[MAX_STACK_SIZE];
+// 	int top;
+// }Stack;
+
+// void init_stack(Stack *st)
+// {
+// 	st->top=-1;
+// }
+
+// int is_empty(Stack * st)
+// {
+// 	return (st->top==-1);
+// }
+
+// int is_full(Stack *st)
+// {
+// 	return (st->top==(MAX_STACK_SIZE-1));
+// }
+
+// void push(Stack *st, int data)
+// {
+// 	if(is_full(st))
+// 	{
+// 		fprintf(stderr,"스택 포화 에러\n");
+// 		return ;
+// 	}
+// 	else
+// 		st->data[++(st->top)]=data;
+// }
+
+// int pop(Stack * st)
+// {
+// 	if(is_empty(st))
+// 	{
+// 		fprintf(stderr, "스택 공백 에러\n");
+// 		exit(1);
+// 	}
+// 	else
+// 		return st->data[(st->top)--];
 // }

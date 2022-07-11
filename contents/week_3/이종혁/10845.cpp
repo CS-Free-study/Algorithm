@@ -71,3 +71,68 @@ int main(int argc, char * argv[])
 	
 	return 0;
 }
+
+
+
+
+
+
+
+
+// ============================================
+
+// c 스타일로 구현
+
+// #include<stdio.h>
+// #include<stdlib.h>
+
+// #define MAX_QUEUE_SIZE 5
+
+// typedef struct{
+// 	int front;
+// 	int rear;
+// 	int data[MAX_QUEUE_SIZE];
+// }Queue;
+
+// void init_queue(Queue *q)
+// {
+// 	q->rear = -1;
+// 	q->front = -1;
+// }
+
+// int is_full(Queue *q)
+// {
+// 	if(q->rear == MAX_QUEUE_SIZE -1)
+// 		return 1;
+// 	else
+// 		return 0;
+// }
+
+// int is_empty(Queue *q)
+// {
+// 	if(q->front == q-> rear)
+// 		return 1;
+// 	else
+// 		return 0;
+// }
+
+// void enqueue(Queue *q, int data)
+// {
+// 	if(is_full(q))
+// 	{
+// 		printf("큐가 포화상태");
+// 		return ;
+// 	}
+// 	q->data[++(q->rear)]=data;
+// }
+
+// int dequeue(Queue *q)
+// {
+// 	if(is_empty(q))
+// 	{
+// 		printf("큐가 공백상태");
+// 		return -1;
+// 	}
+// 	int data=q->data[++(q->front)];
+// 	return data;
+// }
