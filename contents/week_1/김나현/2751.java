@@ -1,7 +1,7 @@
 // Boj 2751번 : 수 정렬하기 2
-
+//
 // Arrays.sort 로 쓰면 시간초과
-
+//
 // O(nlogn)을 보장하거나 혹은, O(n)에 가까운 정렬 알고리즘을 사용해야 한다.
 // 1. Collections.sort() 사용
 // https://st-lab.tistory.com/276

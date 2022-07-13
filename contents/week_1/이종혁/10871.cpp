@@ -14,9 +14,8 @@ int main(int argc, char * argv[])
 	{
 		cin >> arr[i];
 		if (arr[i] < x)
-			cout << arr[i] << " ";
+	 	cout << arr[i] << " ";
 	}
 	delete[] arr;
 	return 0;
 }
-
