@@ -38,6 +38,13 @@ int main()
         }
     }
     
+    // 코드를 재사용할 수 있는 문법
+    // auto = vector<int>::iterator 
+    // for(auto it=v.begin(); it!=v.end(); ++it)
+    // {            
+    //     cout << (*it) << '\n';
+    // }
+
     for (int i = 0; i < v.size(); i++)
     {
         cout << v[i] << '\n';
