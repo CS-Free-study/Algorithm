@@ -1,5 +1,7 @@
 package Stack;
 
+// Boj 1874, 실버 3, 스택 수열
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
