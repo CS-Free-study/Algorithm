@@ -1,9 +1,11 @@
-// boj 10845 
+// boj 10845 큐
 // silver 4
 
 #include<iostream>
 #include<string>
 #include<queue>
+
+
 
 using namespace std;
 
@@ -125,6 +127,8 @@ int main(int argc, char * argv[])
 // 	}
 // 	q->data[++(q->rear)]=data;
 // }
+
+
 
 // int dequeue(Queue *q)
 // {
