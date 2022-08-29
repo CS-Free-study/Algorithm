@@ -4,30 +4,34 @@ input = sys.stdin.readline
 
 n, m = map(int, input().split())
 graph = [[] for _ in range(n + 1)]
-visited = [False] * (n + 1)
-ans = 0
+ans = []
 
 for _ in range(m):
     a, b = map(int, input().split())
 
-    graph[a].append(b)
     graph[b].append(a)
 
 def bfs(v):
+    visited = [False] * (n + 1)
     visited[v] = True
     q = deque([v])
+    cnt = 1
 
     while q:
-        node = q.popleft()
+        v = q.popleft()
 
-        for i in graph[node]:
+        for i in graph[v]:
             if not visited[i]:
                 visited[i] = True
+                cnt += 1
                 q.append(i)
+    
+    return cnt
 
 for i in range(1, n + 1):
-    if not visited[i]:
-        bfs(i)
-        ans += 1
+    ans.append(bfs(i))
 
-print(ans)
+maxValue = max(ans)
+for i in range(n):
+    if ans[i] == maxValue:
+        print(i + 1, end = ' ')
